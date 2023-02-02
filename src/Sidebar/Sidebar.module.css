@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.container{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: #f0f4f7;
+}
+
+.cuvette{
+    margin-top: 8%;
+    margin-left: 12%;
+    max-height: 8%;
+}
+
+.buttons{
+    margin-top: 12%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f4f7;
+}
+
+.addFile{
+    margin-right: 7%;
+}
+
+.lockButton{
+    position: absolute;
+    top: 90%;
+    left: 9%;
+}
