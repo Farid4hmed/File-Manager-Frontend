@@ -1,4 +1,3 @@
-import FolderList from "../FolderList/FolderList";
 import styles from "./Sidebar.module.css";
 
 export default function Sidebar() {
@@ -28,7 +27,6 @@ export default function Sidebar() {
 
             </div>
 
-            <FolderList />
             <svg className={styles.lockButton} width="281" height="44" viewBox="0 0 281 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="281" height="44" rx="5" fill="#445EE2" />
                 <path d="M100.853 21.3068H91.1473C90.3815 21.3068 89.7607 21.9275 89.7607 22.6933V27.5461C89.7607 28.3119 90.3815 28.9326 91.1473 28.9326H100.853C101.619 28.9326 102.239 28.3119 102.239 27.5461V22.6933C102.239 21.9275 101.619 21.3068 100.853 21.3068Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
