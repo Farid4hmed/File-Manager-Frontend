@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 .overlay {
     position: fixed;
     top: 0;
@@ -9,8 +10,8 @@
     z-index: 1000;
 }
 
-.modal{
-    height: 40%;
+.modal {
+    height: 22%;
     width: 20%;
     position: fixed;
     top: 50%;
@@ -20,43 +21,39 @@
     padding: 50px;
     z-index: 1000;
     border-radius: 7px;
+
 }
 
-.modal h3{
+.modal h2 {
     font-family: 'DM Sans';
     position: absolute;
     top: 10%;
 }
 
-.setPin{
-    font-family: 'DM Sans';
-    position: absolute;
-    top: 22%;
+.enterPin {
+    display: flex;
+    justify-content: center;
 }
 
-.setPin input{
-    padding-left: 10px;
-    border-style: solid;
-    margin-top: 10px;
+.enterPin input {
+    margin-top: 65px;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    width: 280px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
     border-color: #C8D6E5;
+    border-width: 0.5px;
     border-radius: 5px;
-    border-width: 1px;
-    height: 35px;
-    width: 270px;
-    font-size: 25px;
 }
 
 
-label{
-    font-size: medium;
-    color: grey;
-}
-
-.saveChanges{
-    height: 45px;
-    width: 50%;
-    margin-top: 17%;
-    margin-left: 17%;
+.enter{
+    position: absolute;
+    top: 75%;
+    height: 17%;
+    width: 30%;
     border-style: solid;
     background-color: #142683;
     font-family: 'DM Sans';
@@ -65,9 +62,11 @@ label{
     border-color:#142683;
     font-weight: bold;
     font-size: 15px;
-} 
+}
 
-.error{
+.label{
     position: absolute;
-    
+    top: 30%;
+    right: 55%;
+
 }
