@@ -1,0 +1,35 @@
+.container{
+    position: absolute;
+    top: 12.5%;
+    left: 30%;
+    height: 30%;
+    width: 32.6%;
+    background-color: white;
+    opacity: 85%;
+    overflow-y: scroll;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    /* rgb(207, 204, 204) */
+}
+
+.file{
+    margin-top: 1.5%;
+    margin-left: 0.5%;
+    width: 99%;
+    min-height: 42px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.icon{
+    margin-left: 3%;
+    margin-top: 2.5%;
+}
+
+.file p{
+    margin-top: -5.2%;
+    margin-left: 10%;
+    font-size:large;
+    
+}

@@ -43,3 +43,9 @@ export async function getFiles(folderName){
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
+
+export async function getAllFiles(){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles`;
+    const result = await axios.get(reqUrl);
+    if(result.data)return result.data;
+}

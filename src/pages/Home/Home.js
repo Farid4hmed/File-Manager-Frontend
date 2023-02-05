@@ -3,9 +3,11 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import SetPin from "../../components/SetPin/SetPin.js";
 import EnterPin from "../../components/EnterPin/EnterPin";
 import FileView from '../../components/FileView/FileView';
+import Search from '../../components/Search/Search';
 import { checkStatus } from "../../api/api";
 import styles from "./Home.module.css";
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb';
+import Suggestion from '../../components/Suggestion/Suggestion';
 
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
     const [addFileData, setAddFileData] = useState(false);
     const [currFileName, setCurrFileName] = useState("");
     const [fileData, setFileData] = useState();
+    const [searchText, setSearchText] = useState("");
 
     if (!setting && !loggedIn) {
         checkLog();
@@ -76,6 +79,8 @@ export default function Home() {
             {loggedIn && locked ? <EnterPin setLocked={setLocked} /> : ""}
             <BreadCrumb currFolder={currFolder} currFileName={currFileName} />
             <FileView currFolder={currFolder} currFileList={currFileList} setCurrFileList={setCurrFileList} addFileData={addFileData} setAddFileData={setAddFileData} setCurrFileName={setCurrFileName} setFileData={setFileData} />
+            <Search searchText={searchText} setSearchText={setSearchText}/>
+            {searchText==="" ? "":<Suggestion searchText={searchText} setSearchText={setSearchText} setCurrFolder={setCurrFolder} setCurrFileName={setCurrFileName} setFileData={setFileData} setAddFileData={setAddFileData}/>}
         </div>
     )
 };
