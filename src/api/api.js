@@ -31,3 +31,15 @@ export async function getFolders(){
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
+
+export async function addNewFile(fileName, folderName, fileData){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/file/create?fileName=${fileName}&folderName=${folderName}&fileData=${fileData}`;
+    const result = await axios.get(reqUrl);
+    if(result.data)return result.data;
+};
+
+export async function getFiles(folderName){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles/${folderName}`;
+    const result = await axios.get(reqUrl);
+    if(result.data)return result.data;
+};

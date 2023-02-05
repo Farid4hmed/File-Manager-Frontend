@@ -1,0 +1,30 @@
+.container{
+    height: 70%;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    overflow-y: scroll;
+    word-break: break-all;
+}
+
+.file{
+    position: relative;
+    margin: 30px;
+    height: 100px;
+    width: 95px;
+    text-align: center;
+    overflow-y: hidden;
+    cursor: pointer;
+} 
+
+.image{
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.file p{
+    
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.modal {
+    height: 60%;
+    width: 30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 50px;
+    z-index: 1000;
+    border-radius: 7px;
+
+}
+
+.modal h2 {
+    font-family: 'DM Sans';
+    position: absolute;
+    top: 5.5%;
+    left: 10%;
+}
+
+.enterPin {
+    display: flex;
+    justify-content: center;
+}
+
+
+.enterPin textarea {
+    margin-top: 25px;
+    padding: 0.5rem;
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    font-size: 0.7rem;
+    border-color: #C8D6E5;
+    border-width: 0.5px;
+    border-radius: 5px;
+}
+
+
+.enter {
+    position: absolute;
+    top: 85%;
+    height: 9%;
+    width: 25%;
+    border-style: solid;
+    background-color: #142683;
+    font-family: 'DM Sans';
+    color: white;
+    border-radius: 5px;
+    border-color: #142683;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.label {
+    position: absolute;
+    top: 30%;
+    right: 59%;
+
+}

@@ -6,7 +6,7 @@
     background-color: #f0f4f7;
 }
 
-.cuvette{
+.logo{
     margin-top: 8%;
     margin-left: 12%;
     max-height: 8%;
@@ -30,4 +30,12 @@
     position: absolute;
     top: 90%;
     left: 9%;
+}
+
+.error{
+    position: absolute;
+    left: 10%;
+    top: 23%;
+    color: red;
+    font-family: 'DM Sans';
 }
