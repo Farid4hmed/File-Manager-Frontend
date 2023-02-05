@@ -13,11 +13,10 @@
 
 .bar{
     margin: 2%;
-    width: 99%;
+    width: 98%;
     height: 50px;
     background-color: #e0e5ea;
     border-radius: 5px;
-    /* text-align: center; */
     /* border-style: double;
     border-color: blue; */
 }

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.container{
+    position: absolute;
+    left: 30%;
+    top: 17%;
+    width: 50%;
+    height: 5%;
+    background-color: white;
+
+}
+
+.container p{
+    margin-top: 2%;
+    font-family: 'DM Sans';
+    color: #566474;
+}
