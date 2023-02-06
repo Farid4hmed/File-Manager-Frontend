@@ -71,3 +71,10 @@
     right: 59%;
 
 }
+
+.saving{
+    color: grey;
+    position: absolute;
+    top: 7.5%;
+    left: 74%;
+}

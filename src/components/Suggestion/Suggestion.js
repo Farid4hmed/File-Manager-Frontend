@@ -23,6 +23,7 @@ export default function Suggestion(props) {
         props.setFileData(file.fileData);
         props.setAddFileData(true);
         props.setSearchText("");
+        props.setCanEnter(false);
     }
 
     return ( 

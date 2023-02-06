@@ -22,7 +22,7 @@ export default function FolderView(props) {
     return (
         <div className={styles.container}>
             {props.folderList && props.folderList.map((folder, i) => (
-            <div key={toString(folder._id)} className={styles.bar} style={{borderStyle: props.currFolder===folder.folderName?"double": "", borderColor: props.currFolder===folder.folderName?"blue":""}} onClick={()=>{handleClick(folder.folderName, folder._id)}}>
+            <div key={toString(folder._id)} className={styles.bar} style={{borderStyle: props.currFolder===folder.folderName?"solid": "", borderColor: props.currFolder===folder.folderName?"blue":""}} onClick={()=>{handleClick(folder.folderName, folder._id)}}>
             <div className={styles.dummy}>
                 <svg className={styles.icon} width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.0559 15.7897C15.765 16.0911 15.3705 16.2604 14.9592 16.2604H2.55102C2.13966 16.2604 1.74516 16.0911 1.45428 15.7897C1.16341 15.4884 1 15.0796 1 14.6534V3.40394C1 2.97772 1.16341 2.56896 1.45428 2.26757C1.74516 1.96619 2.13966 1.79688 2.55102 1.79688H4.99533C5.88865 1.79688 6.72071 2.25093 7.20408 3.00217V3.00217C7.68744 3.75342 8.51951 4.20747 9.41282 4.20747H14.9592C15.3705 4.20747 15.765 4.37679 16.0559 4.67817C16.3468 4.97955 16.5102 5.38831 16.5102 5.81453V8.02425" stroke="#697584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
