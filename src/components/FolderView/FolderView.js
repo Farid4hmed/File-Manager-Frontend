@@ -8,6 +8,7 @@ export default function FolderView(props) {
     function handleClick(name){
        setCurrId(name);
        props.setCurrFolder(name);
+       props.setCurrFileName("");
     }
 
 

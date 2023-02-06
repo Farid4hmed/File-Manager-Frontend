@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ReactDom from "react-dom";
 import { addNewFile } from '../../api/api';
+import TextEditor from '../TextEditor/TextEditor';
 
 import styles from "./AddFileData.module.css";
 
@@ -15,23 +16,6 @@ export default function AddFileData(props) {
     props.setFileData();
   }
 
-  setTimeout(() => {
-    setSaving(false);
-  },5000)
-
-  async function handleChange(event){
-      setTimeout(() => {
-          autoSave(event);
-      }, 1000);
-      setSaving(true);
-  }
-
-  async function autoSave(event){
-    setCurrFileData(event.target.value);
-    if (currFileData) await addNewFile(props.currFileName, props.currFolderName, currFileData);
-    else await addNewFile(props.currFileName, props.currFolderName, props.fileData);
-  }
-
   return ReactDom.createPortal(
     <>
       <div className={styles.overlay} />
@@ -39,7 +23,8 @@ export default function AddFileData(props) {
         <h2>Edit File</h2>
         {saving?<p className={styles.saving}>autosaving...</p>: ""}
         <form className={styles.enterPin}>
-          <textarea autoFocus type="text" onKeyDown={e => { handleChange(e) }} placeholder="Type anything here!">{props.fileData}</textarea>
+          {/* <textarea autoFocus type="text" onKeyDown={e => { handleChange(e) }} placeholder="Type anything here!">{props.fileData}</textarea> */}
+          <TextEditor fileData={props.fileData} currFileName={props.currFileName} currFolderName={props.currFolderName} currFileData={currFileData} saving={saving} setSaving={setSaving} setCurrFileData={setCurrFileData} />
           <button type="button" className={styles.enter} onClick={handleClick}>Save File</button>
         </form>
       </div>

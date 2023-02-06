@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 
 import styles from "./AddFileName.module.css";
 
-export default function AddFile(props) {
+export default function AddFileName(props) {
 
   function handleClick() {
     props.setAddFileName(false);

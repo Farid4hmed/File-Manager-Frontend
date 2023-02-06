@@ -41,7 +41,7 @@ export default function FileView(props) {
             <path d="M73.7631 20.966H52.7971V0L73.7631 20.966Z" fill="#E9F2FF" />
           </svg>
 
-          <p>{file.fileName.length > 11 ? file.fileName.slice(0, 11) + "..." : file.fileName}</p>
+          <p>{file && file.fileName.length > 11 ? file.fileName.slice(0, 11) + "..." : file.fileName}</p>
         </div>
       ))}
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from "./BreadCrumb.module.css";
 
 export default function BreadCrumb(props) {
