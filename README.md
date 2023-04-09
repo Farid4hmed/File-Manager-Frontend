@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+#File Manager Web App
+
+The Current Password to access the app -> 1234 (Do not change it!)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
