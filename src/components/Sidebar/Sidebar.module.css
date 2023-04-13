@@ -39,3 +39,9 @@
     color: red;
     font-family: 'DM Sans';
 }
+/* RESPONSIVENESS */
+@media screen and (max-width: 1340px){
+    .lockButton{
+        width: 80%;
+    }
+}
