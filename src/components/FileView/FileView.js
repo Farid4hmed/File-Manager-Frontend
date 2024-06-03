@@ -16,7 +16,7 @@ export default function FileView(props) {
   useEffect(() => {
     fetchFiles();
 
-  }, [props.currFolder, props.addFileData, fetchFiles]);
+  }, [props.currFolder, props.addFileData]);
 
 
   function handleDoubleClick(fileName, fileData) {
