@@ -44,19 +44,19 @@ export default function Home() {
             setLoggedIn(true);
         }
     }
-    function handleSettings() {
-        setSetting(true);
-        localStorage.setItem("setting", "true");
-        localStorage.removeItem("loggedIn");
-        localStorage.setItem("loggedIn", "false");
-        setLoggedIn(false);
-    }
+    // function handleSettings() {
+    //     setSetting(true);
+    //     localStorage.setItem("setting", "true");
+    //     localStorage.removeItem("loggedIn");
+    //     localStorage.setItem("loggedIn", "false");
+    //     setLoggedIn(false);
+    // }
 
-    function handleLogout() {
-        setLocked(false);
-        localStorage.removeItem("locked");
-        localStorage.setItem("locked", "true");
-    }
+    // function handleLogout() {
+    //     setLocked(false);
+    //     localStorage.removeItem("locked");
+    //     localStorage.setItem("locked", "true");
+    // }
 
 
 

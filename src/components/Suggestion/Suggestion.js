@@ -14,7 +14,7 @@ export default function Suggestion(props) {
     }
 
     useEffect(() => {
-        if(props.searchText!=="")fetchFile();
+        if(props.searchText !== "")fetchFile();
     }, [props.searchText]);
 
     function handleClick(file){

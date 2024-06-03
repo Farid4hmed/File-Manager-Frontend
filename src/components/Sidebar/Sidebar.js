@@ -11,11 +11,11 @@ export default function Sidebar(props) {
     const [addFileName, setAddFileName] = useState(false);
     const [folderErr, setFolderErr] = useState(false);
 
-    function handleClick() {
-        props.setLocked(false);
-        localStorage.removeItem("locked");
-        localStorage.setItem("locked", "true");
-    }
+    // function handleClick() {
+    //     props.setLocked(false);
+    //     localStorage.removeItem("locked");
+    //     localStorage.setItem("locked", "true");
+    // }
 
     function handleAddFolder() {
         setFolderModal(true);

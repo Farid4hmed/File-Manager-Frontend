@@ -5,7 +5,7 @@ import styles from "./FileView.module.css";
 export default function FileView(props) {
 
   async function fetchFiles() {
-    if (props.currFolder != "") {
+    if (props.currFolder !== "") {
       const result = await getFiles(props.currFolder, props.email);
       if (result) props.setCurrFileList(result);
       else props.setCurrFileList([]);
@@ -16,7 +16,7 @@ export default function FileView(props) {
   useEffect(() => {
     fetchFiles();
 
-  }, [props.currFolder, props.addFileData]);
+  }, [props.currFolder, props.addFileData, fetchFiles]);
 
 
   function handleDoubleClick(fileName, fileData) {
