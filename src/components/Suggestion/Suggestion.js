@@ -6,7 +6,7 @@ export default function Suggestion(props) {
     const [theFiles, setTheFiles] = useState([]);
 
     async function fetchFile() {
-        const result = await getAllFiles();
+        const result = await getAllFiles(props.email);
         const newArray = result.filter((file) => {
             return file.fileName.includes(props.searchText);
         });

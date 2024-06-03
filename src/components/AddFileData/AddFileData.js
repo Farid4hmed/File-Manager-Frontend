@@ -10,8 +10,8 @@ export default function AddFileData(props) {
   const [saving, setSaving] = useState(false);
 
   async function handleClick() {
-    if (currFileData) await addNewFile(props.currFileName, props.currFolderName, currFileData);
-    else await addNewFile(props.currFileName, props.currFolderName, props.fileData);
+    if (currFileData) await addNewFile(props.currFileName, props.currFolderName, currFileData, props.email);
+    else await addNewFile(props.currFileName, props.currFolderName, props.fileData, props.email);
     props.setAddFileData(false);
     props.setFileData();
   }

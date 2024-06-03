@@ -6,7 +6,7 @@ export default function FileView(props) {
 
   async function fetchFiles() {
     if (props.currFolder != "") {
-      const result = await getFiles(props.currFolder);
+      const result = await getFiles(props.currFolder, props.email);
       if (result) props.setCurrFileList(result);
       else props.setCurrFileList([]);
     }

@@ -7,7 +7,7 @@ export default function AddFolder(props) {
   const [folderName, setFolderName] = useState("");
 
   async function handleClick() {
-    await addNewFolder(folderName);
+    await addNewFolder(folderName, props.email);
     props.setFolderModal(false);
     props.folderList.push({ "folderName": folderName });
     props.setFolderList([...props.folderList]);

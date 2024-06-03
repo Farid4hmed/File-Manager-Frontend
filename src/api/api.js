@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export async function setPin(pin){
     const reqUrl = `https://file-manager-seg7.onrender.com/api/auth/setPin/${pin}`;
     const result = await axios.get(reqUrl);
@@ -20,32 +19,32 @@ export async function checkStatus(){
     if(result.data)return result.data;
 };
 
-export async function addNewFolder(foldername){
-    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/folder/create/${foldername}`;
+export async function addNewFolder(foldername, email){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/folder/create/${foldername}/${email}`;
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
 
-export async function getFolders(){
-    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFolders`;
+export async function getFolders(email){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFolders?email=${email}`;
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
 
-export async function addNewFile(fileName, folderName, fileData){
-    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/file/create?fileName=${fileName}&folderName=${folderName}&fileData=${fileData}`;
+export async function addNewFile(fileName, folderName, fileData, email){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/file/create?fileName=${fileName}&folderName=${folderName}&fileData=${fileData}&email=${email}`;
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
 
-export async function getFiles(folderName){
-    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles/${folderName}`;
+export async function getFiles(folderName, email){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles/${folderName}/${email}`;
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 };
 
-export async function getAllFiles(){
-    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles`;
+export async function getAllFiles(email){
+    const reqUrl = `https://file-manager-seg7.onrender.com/api/discover/getFiles?email=${email}`;
     const result = await axios.get(reqUrl);
     if(result.data)return result.data;
 }

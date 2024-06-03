@@ -13,7 +13,7 @@ export default function FolderView(props) {
 
 
     async function fetchFolders() {
-        const result = await getFolders();
+        const result = await getFolders(props.email);
         props.setFolderList(result);
     }
 
