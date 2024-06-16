@@ -82,8 +82,8 @@ export default function Home() {
             </svg></a>
             <div className={styles.line}></div>
             <Sidebar setLocked={setLocked} setCurrFolder={setCurrFolder} currFolder={currFolder} addFileData={addFileData} setAddFileData={setAddFileData} currFileName={currFileName} setCurrFileName={setCurrFileName} fileData={fileData} setFileData={setFileData} setCurrFileList={setCurrFileList} email={email} />
-            {!loggedIn ? <SetPin setLoggedIn={setLoggedIn} setLocked={setLocked} setSetting={setSetting} /> : ""}
-            {loggedIn && locked ? <EnterPin setLocked={setLocked} /> : ""}
+            {/* {!loggedIn ? <SetPin setLoggedIn={setLoggedIn} setLocked={setLocked} setSetting={setSetting} /> : ""}
+            {loggedIn && locked ? <EnterPin setLocked={setLocked} /> : ""} */}
             <BreadCrumb currFolder={currFolder} currFileName={currFileName} />
             <FileView currFolder={currFolder} currFileList={currFileList} setCurrFileList={setCurrFileList} addFileData={addFileData} setAddFileData={setAddFileData} setCurrFileName={setCurrFileName} setFileData={setFileData} email={email} />
             <Search searchText={searchText} setSearchText={setSearchText} canEnter={canEnter} setCanEnter={setCanEnter} email={email} />
